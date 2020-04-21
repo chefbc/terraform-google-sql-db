@@ -16,6 +16,8 @@
 
 provider "google" {
   version = "~> 3.5"
+  project = var.project_id
+  credentials = file(var.gcp_auth_file)
 }
 
 provider "null" {

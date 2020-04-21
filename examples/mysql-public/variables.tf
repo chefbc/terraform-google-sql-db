@@ -19,6 +19,11 @@ variable "project_id" {
   type        = string
 }
 
+variable "gcp_auth_file" {
+  type = string
+  description = "GCP authentication file"
+}
+
 variable "db_name" {
   description = "The name of the SQL Database instance"
   default     = "example-mysql-public"

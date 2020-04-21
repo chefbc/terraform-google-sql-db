@@ -19,6 +19,11 @@ variable "project_id" {
   description = "The project to run tests against"
 }
 
+variable "gcp_auth_file" {
+  type = string
+  description = "GCP authentication file"
+}
+
 variable "mysql_ha_name" {
   type        = string
   description = "The name for Cloud SQL instance"

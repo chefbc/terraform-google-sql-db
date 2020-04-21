@@ -16,6 +16,8 @@
 
 provider "google" {
   version = "~> 3.5"
+  project = var.project_id
+  credentials = file(var.gcp_auth_file)
 }
 
 provider "null" {
@@ -46,7 +48,7 @@ locals {
 module "mysql-db" {
   source           = "../../modules/mysql"
   name             = local.instance_name
-  database_version = "MYSQL_5_6"
+  database_version = "MYSQL_5_7"
   project_id       = var.project_id
   zone             = "c"
   region           = "us-central1"

@@ -19,6 +19,11 @@ variable "project_id" {
   description = "The project to run tests against"
 }
 
+variable "gcp_auth_file" {
+  type = string
+  description = "GCP authentication file"
+}
+
 variable "network_name" {
   default = "mysql-privat"
   type    = string

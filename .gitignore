@@ -2,6 +2,7 @@
 **/.terraform*
 **/backend.tf
 **/terraform.tfplan
+**/terraform.tfvars
 **/values-*.yaml
 
 .idea
